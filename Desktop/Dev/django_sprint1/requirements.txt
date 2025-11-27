@@ -1,0 +1,6 @@
+asgiref==3.11.0
+Django==3.2.16
+pygame==2.6.1
+pytz==2025.2
+sqlparse==0.5.3
+uv==0.8.22
