@@ -3,22 +3,22 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
+.Python
 
 # Virtual Environment
 venv/
 env/
 .venv/
 ENV/
-
-# Database
-*.sqlite3
-*.db
-db.sqlite3
+pyvenv.cfg
 
 # Django
 *.log
 *.pot
 *.pyc
+db.sqlite3
+db.sqlite3-journal
+sent_emails/
 
 # Static files (if collected)
 /staticfiles/
@@ -31,9 +31,15 @@ db.sqlite3
 .idea/
 *.swp
 *.swo
+*.sublime-*
 
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
 # Testing
@@ -41,16 +47,27 @@ Thumbs.db
 htmlcov/
 .pytest_cache/
 .tox/
+.nox/
 
 # Environment variables
 .env
 .env.local
 .env.*.local
 
-# PyCharm
-.idea/
-*.iml
+# Django secret key
+secret.txt
 
-# VS Code
-.vscode/
-sent_emails/
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Project specific
+/blogicum/venv/
+/the_snake/  # исключаем другую папку
